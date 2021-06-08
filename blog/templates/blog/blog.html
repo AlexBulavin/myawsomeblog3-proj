@@ -29,7 +29,7 @@
         <main class="ps-3 pe-3" role="main">
             <h1 class="pt-5">Recent posts</h1>
             {% for post in posts.all %}
-                <a href="">
+                <a href="{{post.pk}}">
                 <p class="card-text pt-3"><h2>{{post.post_title}}</h2></p>
                 </a>
                 <img class="img-fluid" height=400 width=400 src="{{post.post_image.url}}"/>
