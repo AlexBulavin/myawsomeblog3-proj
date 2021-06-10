@@ -9,6 +9,8 @@ class Post(models.Model):
     post_text = models.CharField(max_length = 500)
 
     def get_summary(self):
-        return self.text[:70]
-    #print('Class Post called')
+        print('get_summary(' + str(self) + 'called')
+        return self.post_text[:70] + '...'
+
+
 
