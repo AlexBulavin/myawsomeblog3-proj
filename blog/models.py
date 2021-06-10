@@ -12,5 +12,6 @@ class Post(models.Model):
         print('get_summary(' + str(self) + 'called')
         return self.post_text[:70] + '...'
 
-
+    def __str__(self):
+        return self.post_title
 
