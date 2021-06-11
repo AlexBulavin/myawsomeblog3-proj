@@ -12,6 +12,6 @@ class Post(models.Model):
         print('get_summary(' + str(self) + 'called')
         return self.post_text[:70] + '...'
 
-    def __str__(self):
+    def __str__(self): #При помощи этой функции обеспечиваем отображение в админ-панели 8000/admin названий постов, а не просто абстрактной нумерации.
         return self.post_title
 
